@@ -4,7 +4,6 @@ import colors from '../styles/colors'
 
 const Nav = styled.nav`
   display: flex;
-  width: 100%;
   background-color: ${colors.secondary};
   justify-content: flex-end; 
   padding: 12px;
@@ -19,12 +18,14 @@ const List = styled.ul`
 const ListItem = styled.li`
   display: inline;
   margin: 20px;
-  color: white;
+  font-weight: bold;
+  color: ${colors.primary};
 `
 
 const links: Record<string, string> = {
   '/': 'Home',
   '/dashboard': 'Dashboard',
+  '/decks': 'Decks',
   '/about': 'About',
 }
 
